@@ -312,5 +312,5 @@ for ref in [
 
 
 # Footer
-st.markdown("🚀 **Portfolio built with Streamlit** | 📌 Last updated: 2025")
+st.markdown("🚀 **Portfolio built with Streamlit** | 📌 Last updated: 13 Feb 2025")
 
