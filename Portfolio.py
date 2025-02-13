@@ -4,18 +4,44 @@ import streamlit as st
 st.set_page_config(page_title="Shakthi J - Portfolio", page_icon="🔬", layout="wide")
 st.markdown("""
     <style>
-    body {
-        background-color: #004d00; /* Deep green */
-        color: #FFDD00; /* Bright yellow text */
+    /* Set Background Color for Main Content */
+    .main {
+        background-color: #1E1E1E !important; /* Dark Gray */
+        color: #FFD700 !important; /* Gold Text */
     }
-    .stMarkdown {
-        text-align: left !important;
+
+    /* Change Sidebar Background */
+    .st-emotion-cache-1gulkj5 {  
+        background-color: #333333 !important; /* Darker Gray */
     }
-    .stImage {
-        text-align: center !important;
+
+    /* Adjust Overall Page */
+    html, body, [class*="st-emotion-cache"]  {
+        background-color: #1E1E1E !important; /* Dark Gray */
+        color: #FFD700 !important; /* Gold Text */
+    }
+    
+    /* Change Font Colors for Different Sections */
+    h1, h2, h3, h4, p, li {
+        color: #FFD700 !important; /* Gold Text */
+    }
+
+    /* Change Expander Background */
+    .st-emotion-cache-1wbqyqz {
+        background-color: #292929 !important; /* Dark Gray */
+    }
+
+    /* Center Align Text in Mobile */
+    @media (max-width: 768px) {
+        h1 { text-align: center !important; }
+        h2 { text-align: center !important; }
+        .stMarkdown {
+            text-align: left !important;
+        }
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 st.title("Welcome to My Portfolio")
 
