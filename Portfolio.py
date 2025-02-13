@@ -6,29 +6,40 @@ st.markdown("""
     <style>
     /* Set Background Color for Main Content */
     .main {
-        background-color: #1E1E1E !important; /* Dark Gray */
-        color: #FFD700 !important; /* Gold Text */
+        background-color: #F5F5DC !important; /* Beige */
+        color: #5A3E36 !important; /* Dark Brown Text */
     }
 
     /* Change Sidebar Background */
     .st-emotion-cache-1gulkj5 {  
-        background-color: #333333 !important; /* Darker Gray */
+        background-color: #EDE0D4 !important; /* Lighter Beige */
     }
 
     /* Adjust Overall Page */
     html, body, [class*="st-emotion-cache"]  {
-        background-color: #1E1E1E !important; /* Dark Gray */
-        color: #FFD700 !important; /* Gold Text */
+        background-color: #F5F5DC !important; /* Beige */
+        color: #5A3E36 !important; /* Dark Brown */
     }
     
     /* Change Font Colors for Different Sections */
     h1, h2, h3, h4, p, li {
-        color: #FFD700 !important; /* Gold Text */
+        color: #5A3E36 !important; /* Dark Brown */
     }
 
     /* Change Expander Background */
     .st-emotion-cache-1wbqyqz {
-        background-color: #292929 !important; /* Dark Gray */
+        background-color: #EADBC8 !important; /* Soft Cream */
+        border-radius: 10px; /* Rounded corners */
+        padding: 10px;
+    }
+
+    /* Improve Button Styling */
+    .stButton>button {
+        background-color: #D4A373 !important; /* Warm Beige */
+        color: white !important;
+        border-radius: 8px !important;
+        font-weight: bold !important;
+        padding: 8px 16px !important;
     }
 
     /* Center Align Text in Mobile */
@@ -41,6 +52,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 st.title("Welcome to My Portfolio")
