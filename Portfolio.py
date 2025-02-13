@@ -36,7 +36,7 @@ st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics
 # ✅ Profile Image - Adjust for Mobile & Laptop
 col1, col2 = st.columns([1, 6], gap="small")  # Reduce width ratio & gap
 with col1:
-    st.image("DSC_1530.jpg", width=200)  # Adjust size manually
+    st.image("https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/DSC_1530.jpg", width=200)  # Adjust size manually
 
 with col2:
     st.markdown("""
@@ -74,7 +74,7 @@ for role, company, timeline, details, company_img in [
         "Skilled at working independently and collaboratively in a team environment.",
         "Passionate about learning and committed to continual improvement.",
         "Assisted with day-to-day operations, working efficiently and productively with all team members."
-    ], "Biokart.png"),  # Company logo
+    ], "st.image("https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/Biokart.png"),  # Company logo
 
     ("Bioinformatics Intern", "Biokart Indian Pvt. Ltd", "January 2023 - March 2023", [
         "Assisted in generating **metagenomics and SNP reports** relevant to disease studies.",
@@ -82,7 +82,7 @@ for role, company, timeline, details, company_img in [
         "Generated **16S and ITS metagenomic reports**.",
         "Performed **RAPD analysis and phylogenetic report generation**.",
         "Offered a **full-time position** after internship."
-    ], "Biokart.png")  # Add the company logo here
+    ], "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/Biokart.png")  # Add the company logo here
 ]:  
     with st.expander(f"**{role} - {company}** *({timeline})*"):
         col1, col2 = st.columns([1, 4])
@@ -198,8 +198,8 @@ achievements = [
      🎯 Engaged with an academic audience, effectively communicating complex scientific concepts.""",
      "event": "Manipal Institute of Regenerative Medicine, MAHE",
      "images": [
-         {"path": "Samatva.jpeg", "width": 500},  # Custom width for image 1
-         {"path": "Samatva_2.jpeg", "width": 450}  # Custom width for image 2
+         {"path": "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/Samatva.jpeg", "width": 500},  # Custom width for image 1
+         {"path": "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/Samatva_2.jpeg", "width": 450}  # Custom width for image 2
      ]},
 
     {"title": "National Cadet Corps (NCC) - Sergeant",
@@ -208,8 +208,8 @@ achievements = [
      🎯 Participated in various drills, camps, and social service activities, demonstrating commitment to national service and personal growth.""",
      "event": "2020 - 2023",
      "images": [
-         {"path": "NCC_1.jpeg", "width": 300},  # Custom width for image 1
-         {"path": "NCC_2.jpeg", "width": 400}  # Custom width for image 2
+         {"path": "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/NCC_1.jpeg", "width": 300},  # Custom width for image 1
+         {"path": "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/NCC_2.jpeg", "width": 400}  # Custom width for image 2
      ]}
 ]
 
