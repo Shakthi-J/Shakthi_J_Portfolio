@@ -2,6 +2,22 @@ import streamlit as st
 
 # ✅ Set layout to adjust automatically
 st.set_page_config(page_title="Shakthi J - Portfolio", page_icon="🔬", layout="wide")
+st.markdown("""
+    <style>
+    body {
+        background-color: #004d00; /* Deep green */
+        color: #FFDD00; /* Bright yellow text */
+    }
+    .stMarkdown {
+        text-align: left !important;
+    }
+    .stImage {
+        text-align: center !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("Welcome to My Portfolio")
 
 # ✅ Custom CSS for Adaptive Design
 st.markdown("""
