@@ -97,25 +97,14 @@ with col1:
     st.image("https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/DSC_1530.jpg", width=200)  # Adjust size manually
 
 with col2:
+    st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
     st.markdown("""
-        - 📍 **Location:** Bengaluru, India  
-        - 📧 **Email:** [shakthipostbox@gmail.com](mailto:shakthipostbox@gmail.com)  
-        - 🔗 **LinkedIn:** [Shakthi J](https://www.linkedin.com/in/shakthij)  
-        - 📞 **Phone:** +91 7337810224  
+    🌟 **Dedicated MSc Bioinformatics candidate** passionate about **scientific discovery & healthcare innovation**.  
+    🔬 Skilled in **NGS, computational analysis, and bioinformatics pipeline development**.  
+    🤖 Passionate about **AI/ML-driven** innovations in healthcare.  
+    ⚙️ Experienced in **managing large-scale genomic projects** in **Linux-based environments**.  
+    💡 Passionate about developing **interactive bioinformatics apps** to simplify complex analyses.
     """)
-
-
-st.divider()
-
-# ✅ About Me Section
-st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
-st.markdown("""
-🌟 **Dedicated MSc Bioinformatics candidate** passionate about **scientific discovery & healthcare innovation**.  
-🔬 Skilled in **NGS, computational analysis, and bioinformatics pipeline development**.  
-🤖 Passionate about **AI/ML-driven** innovations in healthcare.  
-⚙️ Experienced in **managing large-scale genomic projects** in **Linux-based environments**.  
-💡 Passionate about developing **interactive bioinformatics apps** to simplify complex analyses.
-""")
 
 st.divider()
 
