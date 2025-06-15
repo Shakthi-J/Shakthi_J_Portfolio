@@ -242,6 +242,43 @@ for title, timeline, description, tools in projects:
 
 st.divider()
 
+def show_certifications():
+    st.header("📜 Certifications")
+
+    certifications = [
+        {
+            "title": "Gut Check: Exploring Your Microbiome",
+            "provider": "University of Colorado Boulder on Coursera",
+            "url": "https://coursera.org/share/8d61040ede8f82ce0221e1f5840a85d4"
+        },
+        {
+            "title": "Hands-on Introduction to Linux Commands and Shell Scripting",
+            "provider": "IBM on Coursera",
+            "url": "https://coursera.org/share/eecb07d0bc27f873aa3aac84c98ed254"
+        },
+        {
+            "title": "Introduction to Small Molecule Drug Discovery & Development",
+            "provider": "University of California San Diego on Coursera",
+            "url": "https://coursera.org/share/b5971c5f66c00c016f7e2440380b1d03"
+        },
+        {
+            "title": "Finding Hidden Messages in DNA (Bioinformatics I)",
+            "provider": "University of California San Diego on Coursera",
+            "url": "https://coursera.org/share/6a4d4c29aafb290b3557fec8c73ecbf6"
+        },
+        {
+            "title": "Managing Stress and Time",
+            "provider": "University of California, Davis on Coursera",
+            "url": "https://coursera.org/share/5f9aa5c6750b886dabf576846c00f438"
+        }
+    ]
+
+    for cert in certifications:
+        st.markdown(f"**{cert['title']}**  \n"
+                    f"*Offered by {cert['provider']}*  \n"
+                    f"[View Certificate]({cert['url']})")
+
+
 # Languages & Interests Section
 col1, col2 = st.columns(2)
 
@@ -294,7 +331,6 @@ for ach in achievements:
             st.image(ach["images"][1]["path"], width=ach["images"][1]["width"])  # Second image with custom width
 
 st.divider()
-
 
 
 # References Section
