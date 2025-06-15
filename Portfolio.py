@@ -92,7 +92,7 @@ st.markdown("<h1 style='text-align: center;'>I'm Shakthi J</h1>", unsafe_allow_h
 st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics Researcher | Computational Biologist | AI-Driven Problem Solver</h2>", unsafe_allow_html=True)
 
 # Profile Image and About Me Side-by-Side
-col1, col2 = st.columns([1, 3], gap="small")  # Slightly adjusted width ratio
+col1, col2 = st.columns([1, 4], gap="small")  # Slightly adjusted width ratio
 
 with col1:
     st.image("https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/DSC_1530.jpg", width=160)  # Slightly smaller image
@@ -357,17 +357,6 @@ else:
     """, unsafe_allow_html=True)
 
 
-# 📬 Contact Section
-st.markdown("<h3>📬 Contact Me</h3>", unsafe_allow_html=True)
-
-with st.form(key="contact_form"):
-    name = st.text_input("Your Name")
-    email = st.text_input("Your Email")
-    message = st.text_area("Your Message")
-    submit = st.form_submit_button("Send")
-
-    if submit:
-        st.success("✅ Thanks for contacting me! I’ll get back to you shortly.")
 
 # Optional Static Contact Info (Below Form)
 st.markdown("""
