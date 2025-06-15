@@ -1,121 +1,65 @@
 import streamlit as st
+from PIL import Image
 
-# ✅ Set layout to adjust automatically
+# ✅ Set layout
 st.set_page_config(page_title="Shakthi J - Portfolio", page_icon="🔬", layout="wide")
-st.markdown("""
-    <style>
-    /* Set Background Color for Main Content */
-    .main {
-        background-color: #F5F5DC !important; /* Beige */
-        color: #5A3E36 !important; /* Dark Brown Text */
-    }
 
-    /* Change Sidebar Background */
-    .st-emotion-cache-1gulkj5 {  
-        background-color: #EDE0D4 !important; /* Lighter Beige */
-    }
+# ✅ Custom CSS for styling (add your existing CSS here if needed)
 
-    /* Adjust Overall Page */
-    html, body, [class*="st-emotion-cache"]  {
-        background-color: #F5F5DC !important; /* Beige */
-        color: #5A3E36 !important; /* Dark Brown */
-    }
-    
-    /* Change Font Colors for Different Sections */
-    h1, h2, h3, h4, p, li {
-        color: #5A3E36 !important; /* Dark Brown */
-    }
+# ✅ Sidebar Navigation
+st.sidebar.title("🔍 Navigation")
+page = st.sidebar.radio("Go to", [
+    "Welcome",
+    "About Me",
+    "Experience",
+    "Projects",
+    "Education",
+    "Skills",
+    "Certifications",
+    "Contact"
+])
 
-    /* Change Expander Background */
-    .st-emotion-cache-1wbqyqz {
-        background-color: #EADBC8 !important; /* Soft Cream */
-        border-radius: 10px; /* Rounded corners */
-        padding: 10px;
-    }
+# ✅ Resume Download Button
+with open("Shakthi_J_Resume.pdf", "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+st.sidebar.download_button(label="📄 Download Resume",
+                           data=PDFbyte,
+                           file_name="Shakthi_J_Resume.pdf",
+                           mime='application/octet-stream')
 
-    /* Improve Button Styling */
-    .stButton>button {
-        background-color: #D4A373 !important; /* Warm Beige */
-        color: white !important;
-        border-radius: 8px !important;
-        font-weight: bold !important;
-        padding: 8px 16px !important;
-    }
+# ✅ Load & Display Profile Image
+image = Image.open("my_img.jpeg")
+st.image(image, width=200)
 
-    /* Center Align Text in Mobile */
-    @media (max-width: 768px) {
-        h1 { text-align: center !important; }
-        h2 { text-align: center !important; }
-        .stMarkdown {
-            text-align: left !important;
-        }
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-
-
-st.title("Welcome!!")
-
-# ✅ Custom CSS for Adaptive Design
-st.markdown("""
-    <style>
-    /* General font scaling */
-    h1 { font-size: 58px !important; }
-    h2 { font-size: 30px !important; }
-    h3 { font-size: 26px !important; }
-    h4 { font-size: 22px !important; }
-    p, li { font-size: 18px !important; }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) { 
-        h1 { font-size: 28px !important; text-align: center; }
-        h2 { font-size: 24px !important; text-align: center; }
-        h3 { font-size: 22px !important; }
-        h4 { font-size: 20px !important; }
-        p, li { font-size: 16px !important; }
-
-         /* Keep images centered, but text left-aligned */
-        .stImage {
-            text-align: center !important;
-        }
-
-        .stMarkdown {
-            text-align: left !important;
-        }
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-# ✅ Profile Section
-st.markdown("<h1 style='text-align: center;'> I'm Shakthi J</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics Researcher |Computational Biologist | AI-Driven Problem Solver</h2>", unsafe_allow_html=True)
-
-# ✅ Profile Image - Adjust for Mobile & Laptop
-col1, col2 = st.columns([1, 6], gap="small")  # Reduce width ratio & gap
-with col1:
-    st.image("https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/DSC_1530.jpg", width=200)  # Adjust size manually
-
-with col2:
-    st.markdown("""
-        - 📍 **Location:** Bengaluru, India  
-        - 📧 **Email:** [shakthipostbox@gmail.com](mailto:shakthipostbox@gmail.com)  
-        - 🔗 **LinkedIn:** [Shakthi J](https://www.linkedin.com/in/shakthij)  
-        - 📞 **Phone:** +91 7337810224  
-    """)
-
-
-st.divider()
+# ✅ Welcome Section
+if page == "Welcome":
+    st.title("Welcome!!")
+    st.markdown("<h1 style='text-align: center;'> I'm Shakthi J</h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Bioinformatics Researcher | Computational Biologist | AI-Driven Problem Solver</h2>", unsafe_allow_html=True)
 
 # ✅ About Me Section
-st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
-st.markdown("""
-🌟 **Dedicated MSc Bioinformatics candidate** passionate about **scientific discovery & healthcare innovation**.  
-🔬 Skilled in **NGS, computational analysis, and bioinformatics pipeline development**.  
-🤖 Passionate about **AI/ML-driven** innovations in healthcare.  
-⚙️ Experienced in **managing large-scale genomic projects** in **Linux-based environments**.  
-💡 Passionate about developing **interactive bioinformatics apps** to simplify complex analyses.
-""")
+if page == "About Me":
+    st.header("🚀 About Me")
+    st.markdown("""
+    🌟 **MSc Bioinformatics candidate** passionate about scientific discovery & healthcare innovation.  
+    🔬 Skilled in NGS, computational analysis, and pipeline development.  
+    🤖 Enthusiastic about AI/ML in healthcare.  
+    ⚙️ Experienced in Linux-based bioinformatics workflows.  
+    💡 Building apps to simplify bioinformatics analysis.
+    """)
+
+# ✅ Contact Section
+if page == "Contact":
+    st.header("📬 Contact Me")
+    with st.form(key="contact_form"):
+        name = st.text_input("Name")
+        email = st.text_input("Email")
+        message = st.text_area("Message")
+        submit = st.form_submit_button("Send")
+
+        if submit:
+            st.success("✅ Thanks for contacting me! I’ll get back to you shortly.")
+
 
 st.divider()
 
