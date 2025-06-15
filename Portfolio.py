@@ -176,7 +176,6 @@ with col3:
 
 st.divider()
 
-
 # Projects Section
 st.markdown("<h3>🚀 Projects</h3>", unsafe_allow_html=True)
 projects = [
