@@ -162,7 +162,6 @@ for role, company, timeline, details, company_img in [
 st.divider()
 
 
-
 # Skills Section
 st.markdown("<h3>🛠 Skills</h3>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
@@ -184,6 +183,7 @@ with col3:
 
 st.divider()
 
+
 # 🔹 Education Section with College Images
 st.markdown("<h3>🎓 Education</h3>", unsafe_allow_html=True)
 col1, col2 = st.columns(2)
@@ -202,6 +202,7 @@ with col2:
     """)
 
 st.divider()
+
 
 # Projects Section
 st.markdown("<h3>🚀 Projects</h3>", unsafe_allow_html=True)
@@ -298,6 +299,7 @@ with col2:
     st.markdown("\n".join([f"- {interest}" for interest in ["App Development", "Machine Learning", "Biomarker Discovery", "Personalized Medicine", "Big Data Analytics", "Power BI"]]))
 
 st.divider()
+
 
 # 🔹 Achievements Section with Personal & NCC Picture
 st.markdown("<h3>🏆 Achievements</h3>", unsafe_allow_html=True)
