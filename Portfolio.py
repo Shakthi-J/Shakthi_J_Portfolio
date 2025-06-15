@@ -287,6 +287,7 @@ def show_certifications():
 show_certifications()
 
 
+
 # Languages & Interests Section
 col1, col2 = st.columns(2)
 
