@@ -343,17 +343,26 @@ for ach in achievements:
 st.divider()
 
 
-# Contact Section
-    st.header("📬 Contact Me")
-    with st.form(key="contact_form"):
-        name = st.text_input("Name")
-        email = st.text_input("Email")
-        message = st.text_area("Message")
-        submit = st.form_submit_button("Send")
+# 📬 Contact Section
+st.markdown("<h3>📬 Contact Me</h3>", unsafe_allow_html=True)
 
-        if submit:
-            st.success("✅ Thanks for contacting me! I’ll get back to you shortly.")
+with st.form(key="contact_form"):
+    name = st.text_input("Your Name")
+    email = st.text_input("Your Email")
+    message = st.text_area("Your Message")
+    submit = st.form_submit_button("Send")
 
+    if submit:
+        st.success("✅ Thanks for contacting me! I’ll get back to you shortly.")
+
+# Optional Static Contact Info (Below Form)
+st.markdown("""
+---
+**📧 Email:** [shakthipostbox@gmail.com](mailto:shakthipostbox@gmail.com)  
+**🔗 LinkedIn:** [linkedin.com/in/shakthij](https://www.linkedin.com/in/shakthij)  
+**🌐 GitHub:** [github.com/Shakthi-J](https://github.com/Shakthi-J)  
+**📍 Location:** Bengaluru, India
+""")
 
 # Footer
-st.markdown("🚀 **Portfolio built with Streamlit** | 📌 Last updated: 13 Feb 2025")
+st.markdown("**Thanks for Visiting!!**")
