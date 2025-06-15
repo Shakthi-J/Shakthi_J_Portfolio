@@ -98,7 +98,7 @@ with col1:
 
 with col2:
     st.markdown("""
-        - 📍 **Location:** Halasuru, Bengaluru, India  
+        - 📍 **Location:** Bengaluru, India  
         - 📧 **Email:** [shakthipostbox@gmail.com](mailto:shakthipostbox@gmail.com)  
         - 🔗 **LinkedIn:** [Shakthi J](https://www.linkedin.com/in/shakthij)  
         - 📞 **Phone:** +91 7337810224  
