@@ -118,16 +118,19 @@ with col2:
 
 st.divider()
 
-# ✅ About Me Section
+
+# Route to different sections
 if selection == "About Me":
-st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
-st.markdown("""
-🌟 *Dedicated MSc Bioinformatics candidate* passionate about *scientific discovery & healthcare innovation*.  
-🔬 Skilled in *NGS, computational analysis, and bioinformatics pipeline development*.  
-🤖 Passionate about *AI/ML-driven* innovations in healthcare.  
-⚙️ Experienced in *managing large-scale genomic projects* in *Linux-based environments*.  
-💡 Passionate about developing *interactive bioinformatics apps* to simplify complex analyses.
-""")
+    st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
+    st.markdown("""
+    <p style='font-size:16px; line-height:1.6'>
+    🌟 I’m a passionate MSc Bioinformatics student with a strong interest in scientific discovery and healthcare innovation.<br><br>
+    🔬 My core strength lies in computational biology, especially in analyzing 16S rRNA and WGS data.<br><br>
+    🤖 I'm also deeply curious about the application of AI/ML in medicine and diagnostics.<br><br>
+    ⚙️ Experienced with Linux-based pipelines, NGS tools (QIIME2, Kraken2, Mothur), and visualization platforms like Power BI.<br><br>
+    💡 I believe in simplifying science through tools, and I enjoy building bioinformatics applications for wider accessibility.
+    </p>
+    """, unsafe_allow_html=True)
 
 
 st.divider()
