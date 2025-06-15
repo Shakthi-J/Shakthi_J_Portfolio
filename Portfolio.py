@@ -343,27 +343,17 @@ for ach in achievements:
 st.divider()
 
 
-# References Section
-st.markdown("<h3>📌 References</h3>", unsafe_allow_html=True)
+# Contact Section
+if page == "Contact":
+    st.header("📬 Contact Me")
+    with st.form(key="contact_form"):
+        name = st.text_input("Name")
+        email = st.text_input("Email")
+        message = st.text_area("Message")
+        submit = st.form_submit_button("Send")
 
-for ref in [
-    {"name": "Dr. L.A Rama Chandra Prasad", "designation": "Associate Professor, R&D Coordinator<br>Bioinformatics Program Coordinator",
-     "institution": "Department of Life Sciences, Garden City University<br>Bengaluru-560049",
-     "email": "ramachandra.prasad@gcu.edu.in", "phone": "+91 8618684623"},
-    {"name": "Dr. V.G. Shanmuga Priya", "designation": "Associate Professor",
-     "institution": "Department of Life Sciences, Garden City University<br>Bengaluru-560049",
-     "email": "shanmuga.priya@gcu.edu.in", "phone": "+91 9480563489"}
-]:
-    st.markdown(f"""
-    <div style="font-size:18px;">
-    <b>{ref['name']}</b>  <br>
-    {ref['designation']}  <br>
-    {ref['institution']}  <br>
-    📧 <a href="mailto:{ref['email']}">{ref['email']}</a>  <br>
-    📞 {ref['phone']}  
-    </div>
-    <hr style="border: 1px solid #ddd;">
-    """, unsafe_allow_html=True)
+        if submit:
+            st.success("✅ Thanks for contacting me! I’ll get back to you shortly.")
 
 
 # Footer
