@@ -210,7 +210,7 @@ projects = [
      "Developed a **Streamlit-based web app** integrated with **Google Colab** to simplify microbiome data analysis for researchers and small labs. Automated sample processing, taxonomic classification, and result visualization while ensuring efficient storage and accessibility.",
      "Streamlit, Google Colab, Linux, Shell Scripting, Kraken2"),
     
-    ("16S rRNA Analysis on Gut Microbiota in Hypothyroidism", "Present",
+    ("16S rRNA Analysis on Gut Microbiota in Hypothyroidism", "Dec 2024 - Feb 2025",
      "Led a study comparing microbial diversity and functional analysis in **16S rRNA sequences** of hypothyroid and healthy pregnant women. Identified taxonomic variations and metabolic pathways to understand the gut microbiome's role in hypothyroidism.",
      "QIIME2, Mothur, FastQC and MultiQC, Kraken2, Microsoft Excel, LEfSe, PICRUSt2, Python (Pandas, Matplotlib, Seaborn), Galaxy"),
     
@@ -218,11 +218,11 @@ projects = [
      "Implemented **AI/ML techniques and Biostatistics** to classify lung cancer subtypes using the **TCGA-LUSC dataset**. Applied **PCA and machine learning models** to extract significant features, achieving high classification accuracy.",
      "Python (scikit-learn, Pandas, NumPy, Matplotlib, Seaborn), PCA, SVM, Random Forest, Logistic Regression, TCGA database"),
     
-    ("Ribosome QSAR Analysis Using ChEMBL Database", "Sep 2024 - Dec 2024",
+    ("Ribosome QSAR Analysis Using ChEMBL Database", "Sep 2024 - Oct 2024",
      "Analyzed **ribosome-targeting compounds** using **QSAR modeling** to identify potential therapeutic candidates. Evaluated molecular properties, enhanced compound screening reliability, and supported translational medicine research.",
      "ChEMBL, RDKit, AutoDock, Python, QSAR modeling, Chemoinformatics tools"),
     
-    ("80S Ribosome Docking Project with Psychiatric Drugs", "Aug 2024 - Dec 2024",
+    ("80S Ribosome Docking Project with Psychiatric Drugs", "Aug 2024 - Nov 2024",
      "Performed **molecular docking studies** on psychiatric drugs with the **80S ribosome**, integrating both **RNA and protein components**. Evaluated binding affinities to understand potential drug-target interactions.",
      "AutoDock, Chimera, Discovery Studio, Open Babel, Python (BioPython), PDB datasets"),
     
