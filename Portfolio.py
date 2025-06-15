@@ -92,7 +92,7 @@ st.markdown("<h1 style='text-align: center;'>I'm Shakthi J</h1>", unsafe_allow_h
 st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics Researcher | Computational Biologist | AI-Driven Problem Solver</h2>", unsafe_allow_html=True)
 
 # Profile Image and About Me Side-by-Side
-col1, col2 = st.columns([1, 3], gap="medium")  # Slightly adjusted width ratio
+col1, col2 = st.columns([1, 2], gap="medium")  # Slightly adjusted width ratio
 
 with col1:
     st.image("https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/DSC_1530.jpg", width=160)  # Slightly smaller image
@@ -177,26 +177,6 @@ with col3:
 st.divider()
 
 
-# 🔹 Education Section with College Images
-st.markdown("<h3>🎓 Education</h3>", unsafe_allow_html=True)
-col1, col2 = st.columns(2)
-
-with col1:
-    st.image("GCU.jpg", width=300)  # First college picture
-    st.markdown("""
-    - **MSc in Bioinformatics (2023-2025 Expected)** - Garden City University |88% - Third Semester|
-    - **BSc in Biotechnology, Biochemistry & Genetics (2020-2023)** - Garden City University |81.7%|  
-    """)
-
-with col2:
-    st.image("St. Joseph's Indian Composite PU College.png", width=500)  # Second college picture
-    st.markdown(""" 
-    - **Pre-University education in Science - PCMB (2018-2020)** - St. Joseph's Indian Composite PU College |72.3%|  
-    """)
-
-st.divider()
-
-
 # Projects Section
 st.markdown("<h3>🚀 Projects</h3>", unsafe_allow_html=True)
 projects = [
@@ -233,6 +213,26 @@ for title, timeline, description, tools in projects:
     with st.expander(f"🎯 **{title}** *({timeline})*"):
         st.write(description)
         st.markdown(f"**🛠 Tools Used:** {tools}")
+
+st.divider()
+
+
+# 🔹 Education Section with College Images
+st.markdown("<h3>🎓 Education</h3>", unsafe_allow_html=True)
+col1, col2 = st.columns(2)
+
+with col1:
+    st.image("GCU.jpg", width=300)  # First college picture
+    st.markdown("""
+    - **MSc in Bioinformatics (2023-2025 Expected)** - Garden City University |88% - Third Semester|
+    - **BSc in Biotechnology, Biochemistry & Genetics (2020-2023)** - Garden City University |81.7%|  
+    """)
+
+with col2:
+    st.image("St. Joseph's Indian Composite PU College.png", width=500)  # Second college picture
+    st.markdown(""" 
+    - **Pre-University education in Science - PCMB (2018-2020)** - St. Joseph's Indian Composite PU College |72.3%|  
+    """)
 
 st.divider()
 
@@ -278,7 +278,6 @@ def show_certifications():
 
 # ✅ Call the function
 show_certifications()
-
 
 
 # Languages & Interests Section
