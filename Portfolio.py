@@ -135,7 +135,7 @@ if selection == "About Me":
 
 # 🔹 Experience Section with Company Logo
 elif selection == "Experience":
-st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
+     st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
 
 for role, company, timeline, details, company_img in [
     ("Bioinformatics Research Intern", "Institute of Bioinformatics and Applied Biotechnology (IBAB)", "February 2025 - June 2025", [
