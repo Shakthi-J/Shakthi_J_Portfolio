@@ -130,7 +130,7 @@ for role, company, timeline, details, company_img in [
     "Developed and optimized workflows for preprocessing, classification, and diversity analysis of metagenomic data.",
     "Worked on **Google Colab and Linux-based environments** for reproducible, scalable workflows.",
     "Documented and presented findings through internal reviews, highlighting key differences in microbial identification capabilities between 16S and WGS."
-], "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/IBAB-logo.png.jpg"),
+], "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/IBAB-logo.png."),
 
     ("Junior Bioinformatician", "Biokart Indian Pvt. Ltd", "April 2023 - August 2023", [
         "Managed clinical datasets using bioinformatics tools for actionable insights.",
