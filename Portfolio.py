@@ -118,7 +118,6 @@ with col2:
 
 st.divider()
 
-
 # Route to different sections
 if selection == "About Me":
     st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
@@ -128,12 +127,11 @@ if selection == "About Me":
     🔬 My core strength lies in computational biology, especially in analyzing 16S rRNA and WGS data.<br><br>
     🤖 I'm also deeply curious about the application of AI/ML in medicine and diagnostics.<br><br>
     ⚙️ Experienced with Linux-based pipelines, NGS tools (QIIME2, Kraken2, Mothur), and visualization platforms like Power BI.<br><br>
-    💡 I believe in simplifying science through tools, and I enjoy building bioinformatics applications for wider accessibility.
+     💡 I believe in simplifying science through tools, and I enjoy building bioinformatics applications for wider accessibility.
     </p>
     """, unsafe_allow_html=True)
 
-
-st.divider()
+    st.divider()
 
 # 🔹 Experience Section with Company Logo
 elif selection == "Experience":
