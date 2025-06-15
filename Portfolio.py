@@ -333,19 +333,26 @@ for ach in achievements:
 
 st.divider()
 
-# Resume Section
+# 📄 Resume Section
 st.markdown("<h3>📄 Resume</h3>", unsafe_allow_html=True)
 
-# Provide a download link
-with open("https://github.com/Shakthi-J/Shakthi_J_Portfolio/blob/main/SHAKTHI_J_Resume.pdf", "rb") as file:  # Replace with your actual resume file path
-    resume_data = file.read()
+try:
+    # Try to load local resume file
+    with open("SHAKTHI_J_Resume.pdf", "rb") as file:
+        resume_data = file.read()
 
-st.download_button(
-    label="📥 Download My Resume",
-    data=resume_data,
-    file_name="Shakthi_J_Resume.pdf",
-    mime="application/pdf"
-)
+    st.download_button(
+        label="📥 Download My Resume",
+        data=resume_data,
+        file_name="SHAKTHI_J_Resume.pdf",
+        mime="application/pdf"
+    )
+except FileNotFoundError:
+    # If local file not found, fallback to GitHub link
+    st.markdown("""
+    📥 [Click here to view or download my resume](https://github.com/Shakthi-J/Shakthi_J_Portfolio/raw/main/SHAKTHI_J_Resume.pdf)
+    """, unsafe_allow_html=True)
+
 
 # 📬 Contact Section
 st.markdown("<h3>📬 Contact Me</h3>", unsafe_allow_html=True)
