@@ -94,7 +94,6 @@ st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics
 # Sidebar Navigation
 st.sidebar.title("🔍 Navigation")
 page = st.sidebar.radio("Go to", [
-    "Welcome",
     "About Me",
     "Experience",
     "Projects",
@@ -120,6 +119,7 @@ with col2:
 st.divider()
 
 # ✅ About Me Section
+if selection == "Experience":
 st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
 st.markdown("""
 🌟 *Dedicated MSc Bioinformatics candidate* passionate about *scientific discovery & healthcare innovation*.  
@@ -133,6 +133,7 @@ st.markdown("""
 st.divider()
 
 # 🔹 Experience Section with Company Logo
+elif selection == "About Me":
 st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
 
 for role, company, timeline, details, company_img in [
