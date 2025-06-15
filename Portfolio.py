@@ -88,7 +88,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ✅ Profile Section
-st.markdown("<h1 style='text-align: center;'>🚀 Shakthi J</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'> Shakthi J</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics Researcher |Computational Biologist | AI-Driven Problem Solver</h2>", unsafe_allow_html=True)
 
 # ✅ Profile Image - Adjust for Mobile & Laptop
@@ -111,7 +111,7 @@ st.divider()
 st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
 st.markdown("""
 🌟 **Dedicated MSc Bioinformatics candidate** passionate about **scientific discovery & healthcare innovation**.  
-🔬 Skilled in **NGS, molecular docking, computational analysis, and bioinformatics pipeline development**.  
+🔬 Skilled in **NGS, computational analysis, and bioinformatics pipeline development**.  
 🤖 Passionate about **AI/ML-driven** innovations in healthcare.  
 ⚙️ Experienced in **managing large-scale genomic projects** in **Linux-based environments**.  
 💡 Passionate about developing **interactive bioinformatics apps** to simplify complex analyses.
@@ -125,7 +125,7 @@ st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
 for role, company, timeline, details, company_img in [
     ("Bioinformatics Research Intern", "Institute of Bioinformatics and Applied Biotechnology (IBAB)", "February 2025 - June 2025", [
     "Performed **comparative analysis of 16S rRNA and Whole Genome Shotgun (WGS) metagenomic datasets** using open-source tools.",
-    "Gained hands-on experience with pipelines involving **QIIME2 for 16S** and **Kraken2 and Bracken** for WGS analysis.",
+    "Gained hands-on experience with pipelines involving **QIIME2 for 16S** and **Kraken2 and Bracken for WGS** analysis.",
     "Assessed strengths and limitations of both approaches in terms of **taxonomic resolution, functional profiling, and computational requirements**.",
     "Developed and optimized workflows for preprocessing, classification, and diversity analysis of metagenomic data.",
     "Worked on **Google Colab and Linux-based environments** for reproducible, scalable workflows.",
@@ -174,12 +174,12 @@ with col1:
 
 with col2:
     st.markdown("<h4>🧬 Bioinformatics</h4>", unsafe_allow_html=True)
-    for skill in ["🧬 Next-Generation Sequencing (NGS)", "🔍 Clinical Data Analysis", "🧪 Pipeline Development", "🧭 Molecular Docking", "💊 Drug Discovery & Interaction", "📊 Biostatistics", "🔬 Data Analysis"]:
+    for skill in ["🧬 Next-Generation Sequencing (NGS)", "🧬 Nextflow", "🔍 Clinical Data Analysis", "🧪 Pipeline Development", "🧭 Molecular Docking", "💊 Drug Discovery & Interaction", "📊 Biostatistics", "🔬 Data Analysis"]:
         st.markdown(f"- {skill}")
 
 with col3:
     st.markdown("<h4>🌟 Soft Skills</h4>", unsafe_allow_html=True)
-    for skill in ["🗣 Communication", "🤝 Teamwork", "📖 Scientific Literature", "🎯 Problem Solving", "🔄 Flexible"]:
+    for skill in ["🗣 Communication", "🤝 Teamwork", "🤖 Individual Player", "📖 Scientific Literature", "🎯 Problem Solving", "🔄 Flexible"]:
         st.markdown(f"- {skill}")
 
 st.divider()
