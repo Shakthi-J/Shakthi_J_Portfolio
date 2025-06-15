@@ -91,7 +91,6 @@ st.markdown("""
 st.markdown("<h1 style='text-align: center;'> I'm Shakthi J</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics Researcher |Computational Biologist | AI-Driven Problem Solver</h2>", unsafe_allow_html=True)
 
-
 # ✅ Profile Image - Adjust for Mobile & Laptop
 col1, col2 = st.columns([1, 6], gap="small")  # Reduce width ratio & gap
 with col1:
@@ -99,43 +98,29 @@ with col1:
 
 with col2:
     st.markdown("""
-        - 📍 *Location:* Bengaluru, India  
-        - 📧 *Email:* [shakthipostbox@gmail.com](mailto:shakthipostbox@gmail.com)  
-        - 🔗 *LinkedIn:* [Shakthi J](https://www.linkedin.com/in/shakthij)  
+        - 📍 **Location:** Bengaluru, India  
+        - 📧 **Email:** [shakthipostbox@gmail.com](mailto:shakthipostbox@gmail.com)  
+        - 🔗 **LinkedIn:** [Shakthi J](https://www.linkedin.com/in/shakthij)  
+        - 📞 **Phone:** +91 7337810224  
     """)
 
 
 st.divider()
-# Sidebar Navigation
-st.sidebar.title("🔍 Navigation")
-page = st.sidebar.radio("Go to", [
-    "About Me",
-    "Experience",
-    "Projects",
-    "Education",
-    "Skills",
-    "Certifications",
-    "Contact"
-], index=0)
 
-# Route to different sections
-if page == "About Me":
-    st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
-    st.markdown("""
-    <p style='font-size:16px; line-height:1.6'>
-    🌟 I’m a passionate MSc Bioinformatics student with a strong interest in scientific discovery and healthcare innovation.<br><br>
-    🔬 My core strength lies in computational biology, especially in analyzing 16S rRNA and WGS data.<br><br>
-    🤖 I'm also deeply curious about the application of AI/ML in medicine and diagnostics.<br><br>
-    ⚙️ Experienced with Linux-based pipelines, NGS tools (QIIME2, Kraken2, Mothur), and visualization platforms like Power BI.<br><br>
-     💡 I believe in simplifying science through tools, and I enjoy building bioinformatics applications for wider accessibility.
-    </p>
-    """, unsafe_allow_html=True)
+# ✅ About Me Section
+st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
+st.markdown("""
+🌟 **Dedicated MSc Bioinformatics candidate** passionate about **scientific discovery & healthcare innovation**.  
+🔬 Skilled in **NGS, computational analysis, and bioinformatics pipeline development**.  
+🤖 Passionate about **AI/ML-driven** innovations in healthcare.  
+⚙️ Experienced in **managing large-scale genomic projects** in **Linux-based environments**.  
+💡 Passionate about developing **interactive bioinformatics apps** to simplify complex analyses.
+""")
 
-    st.divider()
+st.divider()
 
 # 🔹 Experience Section with Company Logo
-elif page == "Experience":
-     st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
+st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
 
 for role, company, timeline, details, company_img in [
     ("Bioinformatics Research Intern", "Institute of Bioinformatics and Applied Biotechnology (IBAB)", "February 2025 - June 2025", [
@@ -358,19 +343,28 @@ for ach in achievements:
 st.divider()
 
 
-# Contact Section
-if page == "Contact":
-    st.header("📬 Contact Me")
-    with st.form(key="contact_form"):
-        name = st.text_input("Name")
-        email = st.text_input("Email")
-        message = st.text_area("Message")
-        submit = st.form_submit_button("Send")
+# References Section
+st.markdown("<h3>📌 References</h3>", unsafe_allow_html=True)
 
-        if submit:
-            st.success("✅ Thanks for contacting me! I’ll get back to you shortly.")
+for ref in [
+    {"name": "Dr. L.A Rama Chandra Prasad", "designation": "Associate Professor, R&D Coordinator<br>Bioinformatics Program Coordinator",
+     "institution": "Department of Life Sciences, Garden City University<br>Bengaluru-560049",
+     "email": "ramachandra.prasad@gcu.edu.in", "phone": "+91 8618684623"},
+    {"name": "Dr. V.G. Shanmuga Priya", "designation": "Associate Professor",
+     "institution": "Department of Life Sciences, Garden City University<br>Bengaluru-560049",
+     "email": "shanmuga.priya@gcu.edu.in", "phone": "+91 9480563489"}
+]:
+    st.markdown(f"""
+    <div style="font-size:18px;">
+    <b>{ref['name']}</b>  <br>
+    {ref['designation']}  <br>
+    {ref['institution']}  <br>
+    📧 <a href="mailto:{ref['email']}">{ref['email']}</a>  <br>
+    📞 {ref['phone']}  
+    </div>
+    <hr style="border: 1px solid #ddd;">
+    """, unsafe_allow_html=True)
 
 
 # Footer
 st.markdown("🚀 **Portfolio built with Streamlit** | 📌 Last updated: 13 Feb 2025")
-
