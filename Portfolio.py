@@ -102,7 +102,7 @@ page = st.sidebar.radio("Go to", [
     "Skills",
     "Certifications",
     "Contact"
-])
+], index=0)
 
 # ✅ Profile Image - Adjust for Mobile & Laptop
 col1, col2 = st.columns([1, 6], gap="small")  # Reduce width ratio & gap
@@ -114,11 +114,8 @@ with col2:
         - 📍 *Location:* Bengaluru, India  
         - 📧 *Email:* [shakthipostbox@gmail.com](mailto:shakthipostbox@gmail.com)  
         - 🔗 *LinkedIn:* [Shakthi J](https://www.linkedin.com/in/shakthij)  
-        - 📞 *Phone:* +91 7337810224  
     """)
 
-
-st.divider()
 
 st.divider()
 
