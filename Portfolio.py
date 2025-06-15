@@ -87,26 +87,30 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ✅ Profile Section
-st.markdown("<h1 style='text-align: center;'> I'm Shakthi J</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics Researcher |Computational Biologist | AI-Driven Problem Solver</h2>", unsafe_allow_html=True)
+# Profile Section
+st.markdown("<h1 style='text-align: center;'>I'm Shakthi J</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics Researcher | Computational Biologist | AI-Driven Problem Solver</h2>", unsafe_allow_html=True)
 
-# ✅ Profile Image - Adjust for Mobile & Laptop
-col1, col2 = st.columns([1, 6], gap="small")  # Reduce width ratio & gap
+# Profile Image and About Me Side-by-Side
+col1, col2 = st.columns([1, 3], gap="medium")  # Slightly adjusted width ratio
+
 with col1:
-    st.image("https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/DSC_1530.jpg", width=200)  # Adjust size manually
+    st.image("https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/DSC_1530.jpg", width=160)  # Slightly smaller image
 
 with col2:
-    st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
     st.markdown("""
-    🌟 **Dedicated MSc Bioinformatics candidate** passionate about **scientific discovery & healthcare innovation**.  
-    🔬 Skilled in **NGS, computational analysis, and bioinformatics pipeline development**.  
-    🤖 Passionate about **AI/ML-driven** innovations in healthcare.  
-    ⚙️ Experienced in **managing large-scale genomic projects** in **Linux-based environments**.  
-    💡 Passionate about developing **interactive bioinformatics apps** to simplify complex analyses.
-    """)
+    <h3>🚀 About Me</h3>
+    <p>
+    🌟 <b>Dedicated MSc Bioinformatics candidate</b> passionate about <b>scientific discovery & healthcare innovation</b>.<br>
+    🔬 Skilled in <b>NGS, computational analysis, and bioinformatics pipeline development</b>.<br>
+    🤖 Passionate about <b>AI/ML-driven</b> innovations in healthcare.<br>
+    ⚙️ Experienced in <b>managing large-scale genomic projects</b> in <b>Linux-based environments</b>.<br>
+    💡 Passionate about developing <b>interactive bioinformatics apps</b> to simplify complex analyses.
+    </p>
+    """, unsafe_allow_html=True)
 
 st.divider()
+
 
 # 🔹 Experience Section with Company Logo
 st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
