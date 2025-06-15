@@ -344,7 +344,6 @@ st.divider()
 
 
 # Contact Section
-if page == "Contact":
     st.header("📬 Contact Me")
     with st.form(key="contact_form"):
         name = st.text_input("Name")
