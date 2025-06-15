@@ -242,7 +242,7 @@ for title, timeline, description, tools in projects:
 
 st.divider()
 
-def show_certifications():
+show_certifications():
     st.header("📜 Certifications")
 
     certifications = [
