@@ -336,21 +336,24 @@ st.divider()
 # 📄 Resume Section
 st.markdown("<h3>📄 Resume</h3>", unsafe_allow_html=True)
 
-try:
-    # Try to load local resume file
-    with open("SHAKTHI_J_Resume.pdf", "rb") as file:
+import os
+
+resume_path = "SHAKTHI_J_Resume.pdf"  # Make sure this is the correct local file name
+
+if os.path.exists(resume_path):
+    with open(resume_path, "rb") as file:
         resume_data = file.read()
 
     st.download_button(
-        label="📥 Download My Resume",
+        label="📥 Download My Resume (PDF)",
         data=resume_data,
         file_name="SHAKTHI_J_Resume.pdf",
         mime="application/pdf"
     )
-except FileNotFoundError:
-    # If local file not found, fallback to GitHub link
+else:
+    st.warning("📂 Resume file not found in local folder.")
     st.markdown("""
-    📥 [Click here to view or download my resume](https://github.com/Shakthi-J/Shakthi_J_Portfolio/raw/main/SHAKTHI_J_Resume.pdf)
+    👉 [Click here to view/download from GitHub](https://github.com/Shakthi-J/Shakthi_J_Portfolio/raw/main/SHAKTHI_J_Resume.pdf)
     """, unsafe_allow_html=True)
 
 
