@@ -119,7 +119,7 @@ with col2:
 st.divider()
 
 # ✅ About Me Section
-if selection == "Experience":
+if selection == "About Me":
 st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
 st.markdown("""
 🌟 *Dedicated MSc Bioinformatics candidate* passionate about *scientific discovery & healthcare innovation*.  
@@ -133,7 +133,7 @@ st.markdown("""
 st.divider()
 
 # 🔹 Experience Section with Company Logo
-elif selection == "About Me":
+elif selection == "Experience":
 st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
 
 for role, company, timeline, details, company_img in [
