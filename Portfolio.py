@@ -55,7 +55,7 @@ st.markdown("""
 
 
 
-st.title("Welcome to My Portfolio")
+st.title("Welcome!!")
 
 # ✅ Custom CSS for Adaptive Design
 st.markdown("""
@@ -88,7 +88,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ✅ Profile Section
-st.markdown("<h1 style='text-align: center;'> Shakthi J</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'> I'm Shakthi J</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; margin-bottom: 15px;'>Bioinformatics Researcher |Computational Biologist | AI-Driven Problem Solver</h2>", unsafe_allow_html=True)
 
 # ✅ Profile Image - Adjust for Mobile & Laptop
