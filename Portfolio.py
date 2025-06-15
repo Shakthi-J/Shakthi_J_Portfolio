@@ -242,7 +242,8 @@ for title, timeline, description, tools in projects:
 
 st.divider()
 
-show_certifications():
+# ✅ Show Certifications
+def show_certifications():
     st.header("📜 Certifications")
 
     certifications = [
@@ -274,10 +275,14 @@ show_certifications():
     ]
 
     for cert in certifications:
-        st.markdown(f"**{cert['title']}**  \n"
-                    f"*Offered by {cert['provider']}*  \n"
-                    f"[View Certificate]({cert['url']})")
-
+        st.markdown(f"""
+        ### ✅ {cert['title']}
+        *Offered by* **{cert['provider']}**  
+        📜 [View Certificate]({cert['url']})
+        """)
+        
+# ✅ Call the function to display certifications
+show_certifications()
 
 # Languages & Interests Section
 col1, col2 = st.columns(2)
