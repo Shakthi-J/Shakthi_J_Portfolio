@@ -123,6 +123,15 @@ st.divider()
 st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
 
 for role, company, timeline, details, company_img in [
+    ("Bioinformatics Research Intern", "Institute of Bioinformatics and Applied Biotechnology (IBAB)", "February 2025 - June 2025", [
+    "Performed **comparative analysis of 16S rRNA and Whole Genome Shotgun (WGS) metagenomic datasets** using open-source tools.",
+    "Gained hands-on experience with pipelines involving **QIIME2 for 16S** and **Kraken2 and Bracken** for WGS analysis.",
+    "Assessed strengths and limitations of both approaches in terms of **taxonomic resolution, functional profiling, and computational requirements**.",
+    "Developed and optimized workflows for preprocessing, classification, and diversity analysis of metagenomic data.",
+    "Worked on **Google Colab and Linux-based environments** for reproducible, scalable workflows.",
+    "Documented and presented findings through internal reviews, highlighting key differences in microbial identification capabilities between 16S and WGS."
+], "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/IBAB-logo.png.jpg"),
+
     ("Junior Bioinformatician", "Biokart Indian Pvt. Ltd", "April 2023 - August 2023", [
         "Managed clinical datasets using bioinformatics tools for actionable insights.",
         "Completed various bioinformatics projects, including **metagenomics analysis (16S and ITS), comparative (Control vs disease) analysis, RAPD analysis, and SNP (variant calling) analysis**.",
