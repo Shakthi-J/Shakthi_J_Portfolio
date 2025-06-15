@@ -119,7 +119,7 @@ page = st.sidebar.radio("Go to", [
 ], index=0)
 
 # Route to different sections
-if selection == "About Me":
+if page == "About Me":
     st.markdown("<h3>🚀 About Me</h3>", unsafe_allow_html=True)
     st.markdown("""
     <p style='font-size:16px; line-height:1.6'>
@@ -134,7 +134,7 @@ if selection == "About Me":
     st.divider()
 
 # 🔹 Experience Section with Company Logo
-elif selection == "Experience":
+elif page == "Experience":
      st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
 
 for role, company, timeline, details, company_img in [
