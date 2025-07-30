@@ -223,7 +223,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.image("GCU.jpg", width=300)  # First college picture
     st.markdown("""
-    - **MSc in Bioinformatics (2023-2025 Expected)** - Garden City University |84.74%|
+    - **MSc in Bioinformatics (2023-2025)** - Garden City University |84.74%|
     - **BSc in Biotechnology, Biochemistry & Genetics (2020-2023)** - Garden City University |81.7%|  
     """)
 
