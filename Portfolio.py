@@ -116,7 +116,7 @@ st.divider()
 st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
 
 for role, company, timeline, details, company_img in [
-    ("Computational Biology Intern", "Biocon Ltd", "September 2025 - Present", [
+    ("Computational Biology Intern", "Biocon Ltd", "August 2025 - Present", [
         "Assisting **Bioinformatics team in API R&D fermentation department**.",
         "Learning to conduct research in an industrial setting with focus on **R&D methodologies**.",
         "Supporting ongoing projects under senior supervision and contributing to **data analysis workflows**.",
