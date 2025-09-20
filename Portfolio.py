@@ -116,6 +116,14 @@ st.divider()
 st.markdown("<h3>💼 Experience</h3>", unsafe_allow_html=True)
 
 for role, company, timeline, details, company_img in [
+    ("Computational Biology Intern", "Biocon Ltd", "September 2025 - Present", [
+        "Assisting **Bioinformatics team in API R&D fermentation department**.",
+        "Learning to conduct research in an industrial setting with focus on **R&D methodologies**.",
+        "Supporting ongoing projects under senior supervision and contributing to **data analysis workflows**.",
+        "Working on **Linux and computational biology tools** for large-scale data handling.",
+        "Gaining exposure to **clinical research and bioinformatics applications** in drug development."
+    ], "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/Biocon.png"),  # Add Biocon logo
+
     ("Bioinformatics Research Intern", "Institute of Bioinformatics and Applied Biotechnology (IBAB)", "February 2025 - June 2025", [
     "Performed **comparative analysis of 16S rRNA and Whole Genome Shotgun (WGS) metagenomic datasets** using open-source tools.",
     "Gained hands-on experience with pipelines involving **QIIME2 for 16S** and **Kraken2 and Bracken for WGS** analysis.",
