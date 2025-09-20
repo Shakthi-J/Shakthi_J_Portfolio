@@ -122,7 +122,7 @@ for role, company, timeline, details, company_img in [
         "Supporting ongoing projects under senior supervision and contributing to **data analysis workflows**.",
         "Working on **Linux and computational biology tools** for large-scale data handling.",
         "Gaining exposure to **clinical research and bioinformatics applications** in drug development."
-    ], "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/Biocon.png"),  # Add Biocon logo
+    ], "https://raw.githubusercontent.com/Shakthi-J/Shakthi_J_Portfolio/main/Biocon.jpg"),  # Add Biocon logo
 
     ("Bioinformatics Research Intern", "Institute of Bioinformatics and Applied Biotechnology (IBAB)", "February 2025 - June 2025", [
     "Performed **comparative analysis of 16S rRNA and Whole Genome Shotgun (WGS) metagenomic datasets** using open-source tools.",
